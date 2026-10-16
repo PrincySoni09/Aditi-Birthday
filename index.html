@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Aditi's Secret Birthday Gift 🎁</title>
+<link rel="stylesheet" href="style.css">
+</head><body>
+
+<!-- 1 midnight clock -->
+<section class="s on" id="s0">
+  <div class="cur l"></div><div class="cur r"></div>
+  <div id="clock"></div>
+  <div id="dig" class="hide0">11:59:55</div>
+  <small class="hide0">✦ watch the clock strike 12:00:00 ✦</small>
+</section>
+
+<!-- 2 passcode -->
+<section class="s" id="s1">
+  <div class="frame" id="mainFrame"></div>
+  <div class="pad">
+    <p>Enter a passcode</p><small id="hint"></small>
+    <div class="dots" id="dots"></div>
+    <div class="keys" id="keys"></div>
+  </div>
+</section>
+
+<!-- 3 something for you -->
+<section class="s pink" id="s2">
+  <h2>I have made something for you 💝</h2>
+  <div class="pic bob" id="pic2">🧸</div>
+  <p style="font-size:17px;margin:10px 0">Are you sure? 🥺 Please say YES! 💖</p>
+  <div><button class="btn" id="y2">YES</button><button class="btn" id="n2">NO</button></div>
+</section>
+
+<!-- 4 excited -->
+<section class="s pink" id="s3">
+  <h2>Are you really excited?</h2>
+  <div class="pic bob" id="pic3">🥳</div>
+  <div><button class="btn go4">YES</button><button class="btn go4">YES</button></div>
+</section>
+
+<!-- 5 hearts + mystery box -->
+<section class="s pink" id="s4">
+  <div class="hearts"><span class="heart">💝</span><span class="heart">💝</span><span class="heart">💝</span></div>
+  <div id="mbox" class="bob">🎁</div>
+  <h2 style="font-size:22px">Tap on the mystery box<br>to unlock your gifts!</h2>
+</section>
+
+<!-- 6 memories -->
+<section class="s" id="s5">
+  <div class="wall">
+    <h2>MEMORIES ✦</h2><div class="string"></div>
+    <button class="nav" style="left:2px" onclick="rail.scrollBy({left:-170,behavior:'smooth'})">‹</button><button class="nav" style="right:2px" onclick="rail.scrollBy({left:170,behavior:'smooth'})">›</button>
+    <div class="rail" id="rail"></div>
+    <p style="font-size:13px;margin:6px 0 10px">🌸 Swipe through the memories, tap a photo to fade it 🌸</p>
+    <button class="btn" id="next5" style="font-size:16px;padding:8px 22px">Continue 💌</button>
+  </div>
+</section>
+
+<section class="s" id="s5t">
+  <h2>Throwback: Little Aditi 🧸</h2>
+  <p style="margin-bottom:8px">Tap each photo to see THEN → NOW 👇</p>
+  <div class="tb" id="tb"></div>
+  <p style="margin:6px 0 10px;font-size:14px">Same sparkle. Same smile. Just more fabulous ✨</p>
+  <button class="btn" id="next6t">Continue 💖</button>
+</section>
+
+<section class="s" id="s5b">
+  <h2>5 Reasons Aditi is Amazing 💖</h2>
+  <p style="margin-bottom:6px">Tap each card to reveal 👇</p>
+  <div class="rg" id="rg"></div>
+  <button class="btn" id="next7" style="display:none">Read my letter 💌</button>
+</section>
+<!-- 7 letter -->
+<section class="s" id="s6">
+  <div class="frame" id="frame6"></div>
+  <div class="txt"><h3 id="lt"></h3><p id="lp"></p><button class="btn" id="next6" style="display:none;font-size:16px;margin-top:16px">Make a wish 🎂</button></div>
+</section>
+
+<!-- 8 wish -->
+<section class="s" id="s7">
+  <h1>MAKE A WISH ✨</h1>
+  <div class="cake" id="cake">
+    <div class="cn" id="cn"></div>
+    <div class="t1"></div><div class="t2"></div>
+  </div>
+  <p style="font-size:14px">Tap each candle to blow it out 🕯️</p>
+  <div id="wmsg"></div>
+</section>
+
+<script src="config.js"></script>
+<script src="script.js"></script>
+</body></html>
